@@ -23,7 +23,7 @@ if len(sys.argv) == 6:
 inp_exp = np.loadtxt(exp_file)
 exp = inp_exp[...,1]
 err = inp_exp[...,2]
-wlr = 1/err
+wlr = 1/(err**2)
 
 def col0(frame):
     return(int(frame[5:]))
